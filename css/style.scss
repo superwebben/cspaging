@@ -1,0 +1,179 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  overflow: hidden;
+  display: flex;
+  flex: 1;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+p,span,a,h1,h2,h3,h4,h5,h6,ul,ol,li,input,img,table,tr,th,td,dl,dd,dt{
+	margin:0; padding:0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*寻呼首页*/
+.mui-content{
+  height: 100%;
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+
+  .mui-primaryNav{ /*一级导航*/
+    width: 88px;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #eeeeee;
+    display: flex;
+    flex-direction: column;
+
+    .headPortrait{
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      margin: 10px auto;
+      text-align: center;
+      overflow: hidden;
+      border: 1px solid #eeeeee;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px;
+      position: relative;
+      -ms-behavior:url(/portal/themes/boss/login/css/PIE.htc);
+      behavior: url(/portal/themes/boss/login/css/PIE.htc);
+
+      img{
+        width: 100%;
+      }
+    }
+
+    .primaryNavList{
+      flex: 1;
+
+      .primaryNavListItem{
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin: 25px auto;
+
+        img{
+          width: 100%;
+        }
+      }
+    }
+
+    .primaryNavSetUp{
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      width: 88px;
+
+      .primaryNavListItem{
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin: 15px auto;
+        position: relative;
+
+        img{
+          width: 100%;
+        }
+
+        .mui-badge{
+          position: absolute;
+          top: -5px;
+          right: -18px;
+        }
+      }
+    }
+  }
+
+  .mui-SecondaryNav{ /*二级导航*/
+    width: 240px;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #eeeeee;
+
+    .mui-btn{
+      width: 120px;
+      height: 36px;
+      margin: 10px 0 10px 15px;
+
+      img{
+        float: left;
+        width: 20%;
+      }
+    }
+
+    .mui-btn-primary{
+      border: 1px solid #022981;
+      background-color: #022981;
+    }
+
+    .mui-table-view{
+      .mui-table-view-cell{
+        padding: 0;
+        cursor: pointer;
+
+        a{
+          display: block;
+          margin: 0px;
+          padding: 18px 15px;
+        }
+
+        &:hover{
+          background: #f0f4fe;
+          color: #022981;
+        }
+
+        .mui-media-object{
+          float: left;
+          line-height: 20px;
+          max-width: 20px;
+          height: 20px;
+        }
+      }
+
+      .selected{
+        a{
+          background: #f0f4fe;
+          color: #022981;
+        }
+      }
+    }
+  }
+
+  .mui-list{
+    padding: 20px;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+
+    .operationBtn{
+      text-align: right;
+
+      a{
+        margin: 0 5px;
+        img{
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .pagingContent{
+      h3{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+

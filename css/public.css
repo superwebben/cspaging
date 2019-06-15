@@ -1,0 +1,11 @@
+.flex-content {
+  display: flex;
+  flex: 1;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  background: #ffffff; }
+  .flex-content .clear {
+    clear: both; }
+
+/*# sourceMappingURL=public.css.map */
